@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    background: #4a4aee;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.main-layout {
+    display: flex;
+    min-height: 80vh;
+}
+
+
+.sidebar {
+    background: #222;
+    color: white;
+
+  
+    flex: 0 0 200px;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+
+.content {
+    flex-grow: 1; 
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.card {
+    background: #e7e7e7;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+
+    
+    flex-basis: 200px;
+
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    background: #c3c3ff;
+    cursor: pointer;
+}
+
+
+.destaque {
+    flex-grow: 2;      
+    flex-basis: 300px; 
+    order: -1;         
+    align-self: center;
+    background: #ffd27f;
+}
+
+/* Cartão que não encolhe (missão extra) */
+.no-shrink {
+    flex-shrink: 0;
+    background: #ff8a8a;
+}
+
+/* Rodapé */
+.footer {
+    background: #4a4aee;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
